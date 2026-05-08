@@ -9,7 +9,7 @@ Built with clean architecture, zero hardcoded data, and full Allure reporting.
 
 | Feature | Test Class | Scenarios |
 |---|---|---|
-| User Registration | `RegistrationTests` | Valid registration, invalid inputs, missing fields |
+| User Registration | `RegistrationTests` | Valid registration, missing fields |
 | User Login | `LoginTests` | Valid login, wrong password |
 | Add to Cart (E2E) | `AddToCartTests` | Login → Browse → Sort → Select Product → Add to Cart |
 
