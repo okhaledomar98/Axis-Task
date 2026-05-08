@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Axis Automation Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.axis.automation.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Regression Tests">
+        <classes>
+            <!-- هنزود el-test classes هنا بعدين -->
+        </classes>
+    </test>
+
+</suite>

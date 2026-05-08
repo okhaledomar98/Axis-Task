@@ -1,0 +1,41 @@
+{
+  "validUser": {
+    "firstName": "Omar",
+    "lastName": "Adriano",
+    "email": "adriano.omar98+{{timestamp}}@gmail.com",
+    "password": "Adriano@123",
+    "confirmPassword": "Adriano@123"
+  },
+
+  "invalidUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "not-valid-email",
+    "password": "123",
+    "confirmPassword": "456"
+  },
+
+  "missingFieldsUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "password": "",
+    "confirmPassword": ""
+  },
+
+  "existingUser": {
+    "firstName": "Omar",
+    "lastName": "Adriano",
+    "email": "adriano.omar98@gmail.com",
+    "password": "Adriano@123",
+    "confirmPassword": "Adriano@123"
+  },
+
+  "invalidLoginUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "wrong@email.com",
+    "password": "WrongPass123",
+    "confirmPassword": ""
+  }
+}
