@@ -2,7 +2,7 @@
   "validUser": {
     "firstName": "Omar",
     "lastName": "Adriano",
-    "email": "adriano.omar98+{{timestamp}}@gmail.com",
+    "email": "axis.testuser2.reg2026@gmail.com",
     "password": "Adriano@123",
     "confirmPassword": "Adriano@123"
   },
@@ -25,17 +25,17 @@
 
   "existingUser": {
     "firstName": "Omar",
-    "lastName": "Adriano",
-    "email": "adriano.omar98@gmail.com",
-    "password": "Adriano@123",
-    "confirmPassword": "Adriano@123"
+    "lastName": "Khaled",
+    "email": "o.khaledomar98@gmail.com",
+    "password": "1234567",
+    "confirmPassword": "1234567"
   },
 
   "invalidLoginUser": {
     "firstName": "",
     "lastName": "",
-    "email": "wrong@email.com",
-    "password": "WrongPass123",
+    "email": "o.khaledomar98@gmail.com",
+    "password": "WrongPassword999!",
     "confirmPassword": ""
   }
 }

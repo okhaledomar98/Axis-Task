@@ -1,6 +1,9 @@
 package com.axis.automation.components;
 
 import com.axis.automation.core.BasePage;
+import com.axis.automation.pages.LoginPage;
+import com.axis.automation.pages.RegisterPage;
+import com.axis.automation.pages.ShoesPage;
 import com.axis.automation.utils.LoggerUtils;
 import com.axis.automation.utils.WaitUtils;
 import org.openqa.selenium.By;
@@ -40,24 +43,28 @@ public class HeaderComponent extends BasePage {
 
     /**
      * Opens account dropdown then clicks Log In.
+     * Returns LoginPage for fluent navigation chaining.
      */
-    public void clickLogin() {
+    public LoginPage clickLogin() {
         click(accountToggle);
         LoggerUtils.info("Opened account dropdown");
         WaitUtils.waitForClickability(driver, loginLink);
         click(loginLink);
         LoggerUtils.info("Clicked Log In from header");
+        return new LoginPage(driver);
     }
 
     /**
      * Opens account dropdown then clicks Register.
+     * Returns RegisterPage for fluent navigation chaining.
      */
-    public void clickRegister() {
+    public RegisterPage clickRegister() {
         click(accountToggle);
         LoggerUtils.info("Opened account dropdown");
         WaitUtils.waitForClickability(driver, registerLink);
         click(registerLink);
         LoggerUtils.info("Clicked Register from header");
+        return new RegisterPage(driver);
     }
 
     /**
@@ -76,16 +83,41 @@ public class HeaderComponent extends BasePage {
     // ─── Navigation Actions ──────────────────────────────────────
 
     /**
-     * Hovers over Accessories then clicks Shoes submenu.
+     * Hovers over Accessories menu — dropdown appears.
+     * Use isAccessoriesDropdownVisible() to assert after this.
      */
-    public void navigateToShoes() {
+    public HeaderComponent hoverOverAccessories() {
         WaitUtils.waitForVisibility(driver, accessoriesMenu);
         hover(accessoriesMenu);
         LoggerUtils.info("Hovered over Accessories menu");
+        return this;
+    }
 
+    /**
+     * Asserts Accessories dropdown is visible after hover.
+     */
+    public boolean isAccessoriesDropdownVisible() {
+        return isDisplayed(shoesSubMenu);
+    }
+
+    /**
+     * Clicks Shoes from Accessories dropdown.
+     * Call after hoverOverAccessories().
+     */
+    public ShoesPage clickShoes() {
         WaitUtils.waitForClickability(driver, shoesSubMenu);
         click(shoesSubMenu);
         LoggerUtils.info("Clicked Shoes from Accessories submenu");
+        return new ShoesPage(driver);
+    }
+
+    /**
+     * Hovers over Accessories then clicks Shoes — one-step navigation.
+     * Used by AccountDashboardPage.navigateToShoes().
+     */
+    public void navigateToShoes() {
+        hoverOverAccessories();
+        clickShoes();
     }
 
     // ─── Cart Actions ────────────────────────────────────────────

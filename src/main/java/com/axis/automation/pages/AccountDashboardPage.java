@@ -15,8 +15,8 @@ import org.openqa.selenium.WebDriver;
 public class AccountDashboardPage extends BasePage {
 
     // ─── Locators ────────────────────────────────────────────────
-    private final By welcomeMessage  = By.cssSelector(".welcome-msg");
-    private final By myAccountBox    = By.cssSelector(".box-account");
+    private final By dashboardTitle  = By.cssSelector("div.page-title h1");
+    private final By helloMessage    = By.cssSelector("div.welcome-msg p.hello");
 
     // ─── Components ──────────────────────────────────────────────
     public final HeaderComponent header;
@@ -35,7 +35,7 @@ public class AccountDashboardPage extends BasePage {
     public boolean isPageLoaded() {
         try {
             WaitUtils.waitForUrlContains(driver, "customer/account");
-            WaitUtils.waitForVisibility(driver, myAccountBox);
+            WaitUtils.waitForVisibility(driver, dashboardTitle);
             LoggerUtils.info("Account dashboard loaded successfully");
             return true;
         } catch (Exception e) {
@@ -45,11 +45,12 @@ public class AccountDashboardPage extends BasePage {
     }
 
     /**
-     * Returns welcome message — used for assertion in tests.
+     * Returns hello message — used for assertion in tests.
+     * Example: "Hello, Omar Khaled!"
      */
     public String getWelcomeMessage() {
-        WaitUtils.waitForVisibility(driver, welcomeMessage);
-        return getText(welcomeMessage);
+        WaitUtils.waitForVisibility(driver, helloMessage);
+        return getText(helloMessage);
     }
 
     // ─── Navigation Actions ──────────────────────────────────────

@@ -19,7 +19,7 @@ public class RegisterPage extends BasePage {
     private final By emailInput       = By.id("email_address");
     private final By passwordInput    = By.id("password");
     private final By confirmPassInput = By.id("confirmation");
-    private final By submitButton     = By.cssSelector("button[type='submit']");
+    private final By submitButton     = By.cssSelector("button[title='Register']");
 
     // ─── Error Messages ──────────────────────────────────────────
     private final By firstNameError   = By.cssSelector("#advice-required-entry-firstname");
@@ -77,7 +77,8 @@ public class RegisterPage extends BasePage {
         enterEmail(user.getEmail());
         enterPassword(user.getPassword());
         enterConfirmPassword(user.getConfirmPassword());
-        click(submitButton);
+        scrollToElement(submitButton);
+        clickWithJs(submitButton);
         LoggerUtils.info("Registration submitted — transitioning to Account Dashboard");
         return new AccountDashboardPage(driver);
     }
@@ -99,7 +100,8 @@ public class RegisterPage extends BasePage {
      * Submits the form — use after fillForm() in invalid scenarios.
      */
     public void submit() {
-        click(submitButton);
+        scrollToElement(submitButton);
+        clickWithJs(submitButton);
         LoggerUtils.info("Clicked Register submit button");
     }
 

@@ -29,6 +29,14 @@ public class HomePage extends BasePage {
     // ─── Actions ─────────────────────────────────────────────────
 
     /**
+     * Returns the HeaderComponent for navigation actions.
+     * Provides clean access: homePage.getHeader().clickRegister()
+     */
+    public HeaderComponent getHeader() {
+        return header;
+    }
+
+    /**
      * Opens the home page and waits for it to load.
      * Returns this for method chaining.
      */

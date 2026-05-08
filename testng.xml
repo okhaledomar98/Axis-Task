@@ -1,13 +1,27 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Axis Automation Suite" verbose="1">
 
+    <parameter name="browser" value="chrome"/>
+
     <listeners>
         <listener class-name="com.axis.automation.listeners.TestListener"/>
     </listeners>
 
-    <test name="Regression Tests">
+    <test name="Registration Tests">
         <classes>
-            <!-- هنزود el-test classes هنا بعدين -->
+            <class name="com.axis.automation.tests.registration.RegistrationTests"/>
+        </classes>
+    </test>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.axis.automation.tests.login.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Add To Cart Tests">
+        <classes>
+            <class name="com.axis.automation.tests.cart.AddToCartTests"/>
         </classes>
     </test>
 

@@ -145,12 +145,42 @@ public abstract class BasePage {
     }
 
     /**
+     * Clicks a WebElement using JavaScript — overload for already-resolved elements.
+     */
+    protected void clickWithJs(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        LoggerUtils.info("JS Clicked element: " + element);
+    }
+
+    /**
+     * Fires a real MouseEvent via dispatchEvent — needed for Prototype.js / Magento swatches.
+     * arguments[0].click() does NOT trigger Prototype.js event observers.
+     * new MouseEvent('click', {bubbles:true}) DOES.
+     */
+    protected void fireMouseClick(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript(
+            "var evt = new MouseEvent('click', {bubbles: true, cancelable: true, view: window});" +
+            "arguments[0].dispatchEvent(evt);",
+            element
+        );
+        LoggerUtils.info("Fired MouseEvent click on: " + element);
+    }
+
+    /**
      * Scrolls element into view using JavaScript.
      */
     protected void scrollToElement(By locator) {
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         LoggerUtils.info("Scrolled to: " + locator);
+    }
+
+    /**
+     * Scrolls a WebElement into view — overload for already-resolved elements.
+     */
+    protected void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", element);
+        LoggerUtils.info("Scrolled to element: " + element);
     }
 
     /**

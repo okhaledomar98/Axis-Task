@@ -2,6 +2,7 @@ package com.axis.automation.core;
 
 import com.axis.automation.config.ConfigReader;
 import com.axis.automation.enums.BrowserType;
+import com.axis.automation.pages.HomePage;
 import com.axis.automation.utils.LoggerUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -14,6 +15,7 @@ import org.testng.annotations.*;
 public abstract class BaseTest {
 
     protected WebDriver driver;
+    protected HomePage homePage;
 
     // ─── Setup ───────────────────────────────────────────────────
 
@@ -34,9 +36,11 @@ public abstract class BaseTest {
         driver.get(baseUrl);
         LoggerUtils.info("Browser launched: " + browserName + " | URL: " + baseUrl);
 
-        // 4. Handle consent modal — safe even if not present
-        BasePage basePage = new BasePage(driver) {};
-        basePage.handleConsentModal();
+        // 4. Init HomePage — available to all test classes
+        homePage = new HomePage(driver);
+
+        // 5. Handle consent modal — safe even if not present
+        homePage.handleConsentModal();
     }
 
     // ─── Teardown ────────────────────────────────────────────────

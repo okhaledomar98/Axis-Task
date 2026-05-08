@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     private final By loginButton      = By.id("send2");
 
     // ─── Error Messages ──────────────────────────────────────────
-    private final By loginErrorMsg    = By.cssSelector(".error-msg span");
+    private final By loginErrorMsg    = By.cssSelector("ul.messages li.error-msg span");
     private final By emailError       = By.cssSelector("#advice-required-entry-email, #advice-validate-email-email");
     private final By passwordError    = By.cssSelector("#advice-required-entry-pass");
 
@@ -43,7 +43,8 @@ public class LoginPage extends BasePage {
     }
 
     public void clickLogin() {
-        click(loginButton);
+        scrollToElement(loginButton);
+        clickWithJs(loginButton);
         LoggerUtils.info("Clicked Login button");
     }
 
