@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="65.117" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Automation Tasks\Tasks\tealium-automation-framework\target\test-classes;D:\Automation Tasks\Tasks\tealium-automation-framework\target\classes;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\omar Khaled\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\omar Khaled\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\omar Khaled\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\omar Khaled\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\omar Khaled\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\omar Khaled\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\omar Khaled\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\omar Khaled\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\omar Khaled\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\omar Khaled\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\omar Khaled\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\omar Khaled\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\omar Khaled\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\omar Khaled\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\omar Khaled\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\omar Khaled\AppData\Local\Temp\surefire5009736175451442738\surefirebooter-20260509014215914_3.jar C:\Users\omar Khaled\AppData\Local\Temp\surefire5009736175451442738 2026-05-09T01-42-15_521-jvmRun1 surefire-20260509014215914_1tmp surefire_0-20260509014215914_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Automation Tasks\Tasks\tealium-automation-framework\target\test-classes;D:\Automation Tasks\Tasks\tealium-automation-framework\target\classes;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\omar Khaled\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\omar Khaled\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\omar Khaled\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\omar Khaled\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\omar Khaled\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\omar Khaled\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\omar Khaled\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\omar Khaled\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\omar Khaled\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\omar Khaled\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\omar Khaled\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\omar Khaled\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\omar Khaled\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\omar Khaled\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\omar Khaled\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\omar Khaled\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\omar Khaled\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\omar Khaled\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;"/>
+    <property name="allure.results.directory" value="D:\Automation Tasks\Tasks\tealium-automation-framework\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\omar Khaled"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Automation Tasks\Tasks\tealium-automation-framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\omar Khaled\AppData\Local\Temp\surefire5009736175451442738\surefirebooter-20260509014215914_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="user.name" value="omar Khaled"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\omar Khaled\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\OMARKH~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="D:\Automation Tasks\Tasks\tealium-automation-framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Programs\Seleinum\apache-maven-3.8.5\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-17\bin;C:\maven\apache-maven-3.9.4\bin;D:\Automation Testing\Performance\apache-jmeter-5.6.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\omar Khaled\AppData\Local\Microsoft\WindowsApps;;C:\Users\omar Khaled\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\omar Khaled\AppData\Roaming\npm;C:\Users\omar Khaled\AppData\Local\Programs\cursor\resources\app\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="tc01_validRegistrationWithValidCredentials" classname="com.axis.automation.tests.registration.RegistrationTests" time="3.604">
+    <system-out><![CDATA[2026-05-09 01:42:30 [main] INFO  AutomationLogger - Browser launched: chrome | URL: https://ecommerce.tealiumdemo.com
+2026-05-09 01:42:30 [main] INFO  AutomationLogger - Clicked: By.cssSelector: input#privacy_pref_optin
+2026-05-09 01:42:30 [main] INFO  AutomationLogger - Consent modal detected — selected Opt-In
+2026-05-09 01:42:31 [main] INFO  AutomationLogger - Clicked: By.cssSelector: div#consent_prompt_submit
+2026-05-09 01:42:31 [main] INFO  AutomationLogger - Consent modal dismissed successfully
+2026-05-09 01:42:32 [main] INFO  AutomationLogger - Clicked: By.cssSelector: a.skip-account
+2026-05-09 01:42:32 [main] INFO  AutomationLogger - Opened account dropdown
+2026-05-09 01:42:32 [main] INFO  AutomationLogger - Clicked: By.cssSelector: #header-account a[href*='account/create']
+2026-05-09 01:42:32 [main] INFO  AutomationLogger - Clicked Register from header
+2026-05-09 01:42:33 [main] INFO  AutomationLogger - ?? TEST STARTED: tc01_validRegistrationWithValidCredentials
+2026-05-09 01:42:34 [main] INFO  AutomationLogger - Test data loaded: [validUser] from [testdata/users.json]
+2026-05-09 01:42:34 [main] INFO  AutomationLogger - Typed 'Omar' into: By.id: firstname
+2026-05-09 01:42:34 [main] INFO  AutomationLogger - Entered first name: Omar
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Typed 'Adriano' into: By.id: lastname
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Entered last name: Adriano
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Typed 'axis.testuser1.reg2026@gmail.com' into: By.id: email_address
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Entered email: axis.testuser1.reg2026@gmail.com
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Typed 'Adriano@123' into: By.id: password
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Entered password
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Typed 'Adriano@123' into: By.id: confirmation
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Entered confirm password
+2026-05-09 01:42:35 [main] INFO  AutomationLogger - Scrolled to: By.cssSelector: button[title='Register']
+2026-05-09 01:42:37 [main] INFO  AutomationLogger - JS Clicked: By.cssSelector: button[title='Register']
+2026-05-09 01:42:37 [main] INFO  AutomationLogger - Registration submitted — transitioning to Account Dashboard
+2026-05-09 01:42:37 [main] INFO  AutomationLogger - Account dashboard loaded successfully
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+May 09, 2026 1:42:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 09, 2026 1:42:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc03_missingRequiredFieldsShowsAllErrors" classname="com.axis.automation.tests.registration.RegistrationTests" time="1.355">
+    <system-out><![CDATA[2026-05-09 01:42:37 [main] INFO  AutomationLogger - ? TEST PASSED: tc01_validRegistrationWithValidCredentials
+2026-05-09 01:42:37 [main] INFO  AutomationLogger - ? PASSED: tc01_validRegistrationWithValidCredentials
+2026-05-09 01:42:38 [main] INFO  AutomationLogger - Browser closed after: tc01_validRegistrationWithValidCredentials
+2026-05-09 01:42:42 [main] INFO  AutomationLogger - Browser launched: chrome | URL: https://ecommerce.tealiumdemo.com
+2026-05-09 01:42:42 [main] INFO  AutomationLogger - Clicked: By.cssSelector: input#privacy_pref_optin
+2026-05-09 01:42:42 [main] INFO  AutomationLogger - Consent modal detected — selected Opt-In
+2026-05-09 01:42:42 [main] INFO  AutomationLogger - Clicked: By.cssSelector: div#consent_prompt_submit
+2026-05-09 01:42:42 [main] INFO  AutomationLogger - Consent modal dismissed successfully
+2026-05-09 01:42:43 [main] INFO  AutomationLogger - Clicked: By.cssSelector: a.skip-account
+2026-05-09 01:42:43 [main] INFO  AutomationLogger - Opened account dropdown
+2026-05-09 01:42:43 [main] INFO  AutomationLogger - Clicked: By.cssSelector: #header-account a[href*='account/create']
+2026-05-09 01:42:43 [main] INFO  AutomationLogger - Clicked Register from header
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - ?? TEST STARTED: tc03_missingRequiredFieldsShowsAllErrors
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Test data loaded: [missingFieldsUser] from [testdata/users.json]
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Typed '' into: By.id: firstname
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Entered first name: 
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Typed '' into: By.id: lastname
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Entered last name: 
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Typed '' into: By.id: email_address
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Entered email: 
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Typed '' into: By.id: password
+2026-05-09 01:42:45 [main] INFO  AutomationLogger - Entered password
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - Typed '' into: By.id: confirmation
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - Entered confirm password
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - Scrolled to: By.cssSelector: button[title='Register']
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - JS Clicked: By.cssSelector: button[title='Register']
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - Clicked Register submit button
+]]></system-out>
+    <system-err><![CDATA[May 09, 2026 1:42:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 09, 2026 1:42:40 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc01_validLoginWithValidCredentials" classname="com.axis.automation.tests.login.LoginTests" time="3.42">
+    <system-out><![CDATA[2026-05-09 01:42:46 [main] INFO  AutomationLogger - ? TEST PASSED: tc03_missingRequiredFieldsShowsAllErrors
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - ? PASSED: tc03_missingRequiredFieldsShowsAllErrors
+2026-05-09 01:42:46 [main] INFO  AutomationLogger - Browser closed after: tc03_missingRequiredFieldsShowsAllErrors
+2026-05-09 01:42:50 [main] INFO  AutomationLogger - Browser launched: chrome | URL: https://ecommerce.tealiumdemo.com
+2026-05-09 01:42:50 [main] INFO  AutomationLogger - Clicked: By.cssSelector: input#privacy_pref_optin
+2026-05-09 01:42:50 [main] INFO  AutomationLogger - Consent modal detected — selected Opt-In
+2026-05-09 01:42:50 [main] INFO  AutomationLogger - Clicked: By.cssSelector: div#consent_prompt_submit
+2026-05-09 01:42:50 [main] INFO  AutomationLogger - Consent modal dismissed successfully
+2026-05-09 01:42:51 [main] INFO  AutomationLogger - Clicked: By.cssSelector: a.skip-account
+2026-05-09 01:42:51 [main] INFO  AutomationLogger - Opened account dropdown
+2026-05-09 01:42:51 [main] INFO  AutomationLogger - Clicked: By.cssSelector: #header-account a[href*='account/login']
+2026-05-09 01:42:51 [main] INFO  AutomationLogger - Clicked Log In from header
+2026-05-09 01:42:53 [main] INFO  AutomationLogger - ?? TEST STARTED: tc01_validLoginWithValidCredentials
+2026-05-09 01:42:54 [main] INFO  AutomationLogger - Test data loaded: [existingUser] from [testdata/users.json]
+2026-05-09 01:42:54 [main] INFO  AutomationLogger - Typed 'o.khaledomar98@gmail.com' into: By.id: email
+2026-05-09 01:42:54 [main] INFO  AutomationLogger - Entered email: o.khaledomar98@gmail.com
+2026-05-09 01:42:54 [main] INFO  AutomationLogger - Typed '1234567' into: By.id: pass
+2026-05-09 01:42:54 [main] INFO  AutomationLogger - Entered password
+2026-05-09 01:42:54 [main] INFO  AutomationLogger - Scrolled to: By.id: send2
+2026-05-09 01:42:57 [main] INFO  AutomationLogger - JS Clicked: By.id: send2
+2026-05-09 01:42:57 [main] INFO  AutomationLogger - Clicked Login button
+2026-05-09 01:42:57 [main] INFO  AutomationLogger - Login submitted — transitioning to Account Dashboard
+2026-05-09 01:42:57 [main] INFO  AutomationLogger - Account dashboard loaded successfully
+]]></system-out>
+    <system-err><![CDATA[May 09, 2026 1:42:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 09, 2026 1:42:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc02_invalidLoginWithWrongPassword" classname="com.axis.automation.tests.login.LoginTests" time="1.897">
+    <system-out><![CDATA[2026-05-09 01:42:57 [main] INFO  AutomationLogger - ? TEST PASSED: tc01_validLoginWithValidCredentials
+2026-05-09 01:42:57 [main] INFO  AutomationLogger - ? PASSED: tc01_validLoginWithValidCredentials
+2026-05-09 01:42:57 [main] INFO  AutomationLogger - Browser closed after: tc01_validLoginWithValidCredentials
+2026-05-09 01:43:01 [main] INFO  AutomationLogger - Browser launched: chrome | URL: https://ecommerce.tealiumdemo.com
+2026-05-09 01:43:02 [main] INFO  AutomationLogger - Clicked: By.cssSelector: input#privacy_pref_optin
+2026-05-09 01:43:02 [main] INFO  AutomationLogger - Consent modal detected — selected Opt-In
+2026-05-09 01:43:02 [main] INFO  AutomationLogger - Clicked: By.cssSelector: div#consent_prompt_submit
+2026-05-09 01:43:02 [main] INFO  AutomationLogger - Consent modal dismissed successfully
+2026-05-09 01:43:02 [main] INFO  AutomationLogger - Clicked: By.cssSelector: a.skip-account
+2026-05-09 01:43:02 [main] INFO  AutomationLogger - Opened account dropdown
+2026-05-09 01:43:03 [main] INFO  AutomationLogger - Clicked: By.cssSelector: #header-account a[href*='account/login']
+2026-05-09 01:43:03 [main] INFO  AutomationLogger - Clicked Log In from header
+2026-05-09 01:43:04 [main] INFO  AutomationLogger - ?? TEST STARTED: tc02_invalidLoginWithWrongPassword
+2026-05-09 01:43:04 [main] INFO  AutomationLogger - Test data loaded: [invalidLoginUser] from [testdata/users.json]
+2026-05-09 01:43:04 [main] INFO  AutomationLogger - Typed 'o.khaledomar98@gmail.com' into: By.id: email
+2026-05-09 01:43:04 [main] INFO  AutomationLogger - Entered email: o.khaledomar98@gmail.com
+2026-05-09 01:43:05 [main] INFO  AutomationLogger - Typed 'WrongPassword999!' into: By.id: pass
+2026-05-09 01:43:05 [main] INFO  AutomationLogger - Entered password
+2026-05-09 01:43:05 [main] INFO  AutomationLogger - Scrolled to: By.id: send2
+2026-05-09 01:43:06 [main] INFO  AutomationLogger - JS Clicked: By.id: send2
+2026-05-09 01:43:06 [main] INFO  AutomationLogger - Clicked Login button
+]]></system-out>
+    <system-err><![CDATA[May 09, 2026 1:42:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 09, 2026 1:42:59 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc01_addDorianShoesToCart" classname="com.axis.automation.tests.cart.AddToCartTests" time="11.772">
+    <system-out><![CDATA[2026-05-09 01:43:06 [main] INFO  AutomationLogger - ? TEST PASSED: tc02_invalidLoginWithWrongPassword
+2026-05-09 01:43:06 [main] INFO  AutomationLogger - ? PASSED: tc02_invalidLoginWithWrongPassword
+2026-05-09 01:43:06 [main] INFO  AutomationLogger - Browser closed after: tc02_invalidLoginWithWrongPassword
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Browser launched: chrome | URL: https://ecommerce.tealiumdemo.com
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Clicked: By.cssSelector: input#privacy_pref_optin
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Consent modal detected — selected Opt-In
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Clicked: By.cssSelector: div#consent_prompt_submit
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Consent modal dismissed successfully
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - ?? TEST STARTED: tc01_addDorianShoesToCart
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Test data loaded: [existingUser] from [testdata/users.json]
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Clicked: By.cssSelector: a.skip-account
+2026-05-09 01:43:10 [main] INFO  AutomationLogger - Opened account dropdown
+2026-05-09 01:43:11 [main] INFO  AutomationLogger - Clicked: By.cssSelector: #header-account a[href*='account/login']
+2026-05-09 01:43:11 [main] INFO  AutomationLogger - Clicked Log In from header
+2026-05-09 01:43:13 [main] INFO  AutomationLogger - Typed 'o.khaledomar98@gmail.com' into: By.id: email
+2026-05-09 01:43:13 [main] INFO  AutomationLogger - Entered email: o.khaledomar98@gmail.com
+2026-05-09 01:43:13 [main] INFO  AutomationLogger - Typed '1234567' into: By.id: pass
+2026-05-09 01:43:13 [main] INFO  AutomationLogger - Entered password
+2026-05-09 01:43:13 [main] INFO  AutomationLogger - Scrolled to: By.id: send2
+2026-05-09 01:43:14 [main] INFO  AutomationLogger - JS Clicked: By.id: send2
+2026-05-09 01:43:14 [main] INFO  AutomationLogger - Clicked Login button
+2026-05-09 01:43:14 [main] INFO  AutomationLogger - Login submitted — transitioning to Account Dashboard
+2026-05-09 01:43:14 [main] INFO  AutomationLogger - Account dashboard loaded successfully
+2026-05-09 01:43:15 [main] INFO  AutomationLogger - Hovered over: By.cssSelector: li.nav-3 > a
+2026-05-09 01:43:15 [main] INFO  AutomationLogger - Hovered over Accessories menu
+2026-05-09 01:43:15 [main] INFO  AutomationLogger - Clicked: By.cssSelector: a[href*='accessories/shoes']
+2026-05-09 01:43:15 [main] INFO  AutomationLogger - Clicked Shoes from Accessories submenu
+2026-05-09 01:43:18 [main] INFO  AutomationLogger - Selected 'Price' from: By.cssSelector: div.sort-by select
+2026-05-09 01:43:18 [main] INFO  AutomationLogger - Sorted by Price low to high
+2026-05-09 01:43:18 [main] INFO  AutomationLogger - Product prices found: [210.0, 310.0, 375.0, 390.0, 410.0, 470.0]
+2026-05-09 01:43:18 [main] INFO  AutomationLogger - Found product: DORIAN PERFORATED OXFORD — navigating to: https://ecommerce.tealiumdemo.com/accessories/shoes/dorian-preforated-oxford-558.html
+2026-05-09 01:43:19 [main] INFO  AutomationLogger - Product details page loaded — btn-cart confirmed
+2026-05-09 01:43:20 [main] INFO  AutomationLogger - Selected first available color via select: black
+2026-05-09 01:43:20 [main] INFO  AutomationLogger - Color 'black' selected: true (select value=20)
+2026-05-09 01:43:20 [main] INFO  AutomationLogger - Selected first available size via select: 8
+2026-05-09 01:43:20 [main] INFO  AutomationLogger - Size '8' selected: true (select value=100)
+2026-05-09 01:43:20 [main] INFO  AutomationLogger - Scrolled to: By.cssSelector: div.add-to-cart-buttons button.btn-cart
+2026-05-09 01:43:22 [main] INFO  AutomationLogger - JS Clicked: By.cssSelector: div.add-to-cart-buttons button.btn-cart
+2026-05-09 01:43:22 [main] INFO  AutomationLogger - Clicked Add to Cart — redirecting to Cart page
+2026-05-09 01:43:22 [main] INFO  AutomationLogger - Cart page loaded with success message
+]]></system-out>
+    <system-err><![CDATA[May 09, 2026 1:43:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 09, 2026 1:43:08 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

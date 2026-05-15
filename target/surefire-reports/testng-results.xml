@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-09T01:42:22 EEST" name="Axis Automation Suite" finished-at="2026-05-09T01:43:22 EEST" duration-ms="60661">
+    <groups>
+    </groups>
+    <test started-at="2026-05-09T01:42:22 EEST" name="Registration Tests" finished-at="2026-05-09T01:42:46 EEST" duration-ms="24825">
+      <class name="com.axis.automation.tests.registration.RegistrationTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:22 EEST" name="setUp" finished-at="2026-05-09T01:42:31 EEST" duration-ms="8753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToRegisterPage()[pri:0, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:31 EEST" name="navigateToRegisterPage" finished-at="2026-05-09T01:42:33 EEST" depends-on-methods="com.axis.automation.core.BaseTest.setUp" duration-ms="2564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="tc01_validRegistrationWithValidCredentials()[pri:1, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:33 EEST" name="tc01_validRegistrationWithValidCredentials" description="Successful registration with valid user data" finished-at="2026-05-09T01:42:37 EEST" duration-ms="3590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_validRegistrationWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:37 EEST" name="tearDown" finished-at="2026-05-09T01:42:38 EEST" duration-ms="1389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_validRegistrationWithValidCredentials status=SUCCESS method=RegistrationTests.tc01_validRegistrationWithValidCredentials()[pri:1, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:38 EEST" name="setUp" finished-at="2026-05-09T01:42:42 EEST" duration-ms="3762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToRegisterPage()[pri:0, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:42 EEST" name="navigateToRegisterPage" finished-at="2026-05-09T01:42:45 EEST" depends-on-methods="com.axis.automation.core.BaseTest.setUp" duration-ms="2552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="tc03_missingRequiredFieldsShowsAllErrors()[pri:2, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:45 EEST" name="tc03_missingRequiredFieldsShowsAllErrors" description="Registration fails when all required fields are empty" finished-at="2026-05-09T01:42:46 EEST" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_missingRequiredFieldsShowsAllErrors -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe]" started-at="2026-05-09T01:42:46 EEST" name="tearDown" finished-at="2026-05-09T01:42:46 EEST" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_missingRequiredFieldsShowsAllErrors status=SUCCESS method=RegistrationTests.tc03_missingRequiredFieldsShowsAllErrors()[pri:2, instance:com.axis.automation.tests.registration.RegistrationTests@1d782abe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.axis.automation.tests.registration.RegistrationTests -->
+    </test> <!-- Registration Tests -->
+    <test started-at="2026-05-09T01:42:46 EEST" name="Login Tests" finished-at="2026-05-09T01:43:06 EEST" duration-ms="19845">
+      <class name="com.axis.automation.tests.login.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:42:46 EEST" name="setUp" finished-at="2026-05-09T01:42:50 EEST" duration-ms="3913" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:42:50 EEST" name="navigateToLoginPage" finished-at="2026-05-09T01:42:53 EEST" depends-on-methods="com.axis.automation.core.BaseTest.setUp" duration-ms="3136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="tc01_validLoginWithValidCredentials()[pri:1, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:42:53 EEST" name="tc01_validLoginWithValidCredentials" description="Successful login with valid credentials" finished-at="2026-05-09T01:42:57 EEST" duration-ms="3418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_validLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:42:57 EEST" name="tearDown" finished-at="2026-05-09T01:42:57 EEST" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_validLoginWithValidCredentials status=SUCCESS method=LoginTests.tc01_validLoginWithValidCredentials()[pri:1, instance:com.axis.automation.tests.login.LoginTests@1763992e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:42:57 EEST" name="setUp" finished-at="2026-05-09T01:43:02 EEST" duration-ms="4643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:43:02 EEST" name="navigateToLoginPage" finished-at="2026-05-09T01:43:04 EEST" depends-on-methods="com.axis.automation.core.BaseTest.setUp" duration-ms="2321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="tc02_invalidLoginWithWrongPassword()[pri:2, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:43:04 EEST" name="tc02_invalidLoginWithWrongPassword" description="Login fails with wrong password and shows error message" finished-at="2026-05-09T01:43:06 EEST" duration-ms="1897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_invalidLoginWithWrongPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.axis.automation.tests.login.LoginTests@1763992e]" started-at="2026-05-09T01:43:06 EEST" name="tearDown" finished-at="2026-05-09T01:43:06 EEST" duration-ms="234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_invalidLoginWithWrongPassword status=SUCCESS method=LoginTests.tc02_invalidLoginWithWrongPassword()[pri:2, instance:com.axis.automation.tests.login.LoginTests@1763992e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.axis.automation.tests.login.LoginTests -->
+    </test> <!-- Login Tests -->
+    <test started-at="2026-05-09T01:43:06 EEST" name="Add To Cart Tests" finished-at="2026-05-09T01:43:22 EEST" duration-ms="15955">
+      <class name="com.axis.automation.tests.cart.AddToCartTests">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.axis.automation.tests.cart.AddToCartTests@47f08b81]" started-at="2026-05-09T01:43:06 EEST" name="setUp" finished-at="2026-05-09T01:43:10 EEST" duration-ms="3892" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc01_addDorianShoesToCart()[pri:1, instance:com.axis.automation.tests.cart.AddToCartTests@47f08b81]" started-at="2026-05-09T01:43:10 EEST" name="tc01_addDorianShoesToCart" description="E2E flow: Login → Accessories → Shoes → Sort → Dorian → Color/Size → Cart" finished-at="2026-05-09T01:43:22 EEST" duration-ms="11731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_addDorianShoesToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.axis.automation.tests.cart.AddToCartTests@47f08b81]" started-at="2026-05-09T01:43:22 EEST" name="tearDown" finished-at="2026-05-09T01:43:22 EEST" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_addDorianShoesToCart status=SUCCESS method=AddToCartTests.tc01_addDorianShoesToCart()[pri:1, instance:com.axis.automation.tests.cart.AddToCartTests@47f08b81] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.axis.automation.tests.cart.AddToCartTests -->
+    </test> <!-- Add To Cart Tests -->
+  </suite> <!-- Axis Automation Suite -->
+</testng-results>

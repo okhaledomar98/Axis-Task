@@ -1,0 +1,5 @@
+com\axis\automation\tests\login\LoginTests.class
+com\axis\automation\tests\registration\RegistrationTests.class
+com\axis\automation\listeners\RetryAnalyzer.class
+com\axis\automation\listeners\TestListener.class
+com\axis\automation\tests\cart\AddToCartTests.class

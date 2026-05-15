@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- ==================== PROPERTIES ==================== -->
+    <Properties>
+        <!-- Log file paths -->
+        <Property name="LOG_DIR">logs</Property>
+        <Property name="LOG_FILE_NAME">automation</Property>
+
+        <!-- Log pattern: timestamp [thread] LEVEL logger_name - message -->
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n
+        </Property>
+    </Properties>
+
+    <!-- ==================== APPENDERS (Where logs go) ==================== -->
+    <Appenders>
+
+        <!-- Console output (terminal) -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- File output (saved to disk) -->
+        <RollingFile name="FileAppender"
+                     fileName="${LOG_DIR}/${LOG_FILE_NAME}.log"
+                     filePattern="${LOG_DIR}/${LOG_FILE_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+
+            <Policies>
+                <!-- Create new file when current reaches 10MB -->
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+                <!-- Create new file daily -->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+
+            <!-- Keep only last 10 files -->
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <!-- ==================== LOGGERS ==================== -->
+    <Loggers>
+
+        <!-- Custom logger for our framework -->
+        <Logger name="AutomationLogger" level="INFO" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <!-- Root logger - catches everything else -->
+        <Root level="WARN">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

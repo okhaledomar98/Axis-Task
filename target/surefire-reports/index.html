@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Axis_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Axis Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Axis_Automation_Suite" class="navigator-link ">
+                    <span>D:\Automation Tasks\Tasks\tealium-automation-framework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Axis_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Axis_Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Axis_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Axis_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Axis_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Axis_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Axis_Automation_Suite" class="hide-methods passed suite-Axis_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Axis_Automation_Suite -->
+                      <a href="#" panel-name="suite-Axis_Automation_Suite" class="show-methods passed suite-Axis_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Axis_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Axis_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Axis_Automation_Suite" title="com.axis.automation.tests.cart.AddToCartTests" class="method navigator-link" hash-for-method="tc01_addDorianShoesToCart">tc01_addDorianShoesToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Axis_Automation_Suite" title="com.axis.automation.tests.login.LoginTests" class="method navigator-link" hash-for-method="tc01_validLoginWithValidCredentials">tc01_validLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Axis_Automation_Suite" title="com.axis.automation.tests.registration.RegistrationTests" class="method navigator-link" hash-for-method="tc01_validRegistrationWithValidCredentials">tc01_validRegistrationWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Axis_Automation_Suite" title="com.axis.automation.tests.login.LoginTests" class="method navigator-link" hash-for-method="tc02_invalidLoginWithWrongPassword">tc02_invalidLoginWithWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Axis_Automation_Suite" title="com.axis.automation.tests.registration.RegistrationTests" class="method navigator-link" hash-for-method="tc03_missingRequiredFieldsShowsAllErrors">tc03_missingRequiredFieldsShowsAllErrors</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Axis_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Axis_Automation_Suite" class="panel Axis_Automation_Suite">
+          <div class="suite-Axis_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.axis.automation.tests.login.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_validLoginWithValidCredentials">
+                  </a> <!-- tc01_validLoginWithValidCredentials -->
+                  <span class="method-name">tc01_validLoginWithValidCredentials</span>
+                  <em>
+(Successful login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_invalidLoginWithWrongPassword">
+                  </a> <!-- tc02_invalidLoginWithWrongPassword -->
+                  <span class="method-name">tc02_invalidLoginWithWrongPassword</span>
+                  <em>
+(Login fails with wrong password and shows error message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Axis_Automation_Suite-class-passed -->
+          <div class="suite-Axis_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.axis.automation.tests.registration.RegistrationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_validRegistrationWithValidCredentials">
+                  </a> <!-- tc01_validRegistrationWithValidCredentials -->
+                  <span class="method-name">tc01_validRegistrationWithValidCredentials</span>
+                  <em>
+(Successful registration with valid user data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc03_missingRequiredFieldsShowsAllErrors">
+                  </a> <!-- tc03_missingRequiredFieldsShowsAllErrors -->
+                  <span class="method-name">tc03_missingRequiredFieldsShowsAllErrors</span>
+                  <em>
+(Registration fails when all required fields are empty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Axis_Automation_Suite-class-passed -->
+          <div class="suite-Axis_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.axis.automation.tests.cart.AddToCartTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_addDorianShoesToCart">
+                  </a> <!-- tc01_addDorianShoesToCart -->
+                  <span class="method-name">tc01_addDorianShoesToCart</span>
+                  <em>
+(E2E flow: Login → Accessories → Shoes → Sort → Dorian → Color/Size → Cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Axis_Automation_Suite-class-passed -->
+        </div> <!-- panel Axis_Automation_Suite -->
+        <div panel-name="test-xml-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Automation Tasks\Tasks\tealium-automation-framework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Axis Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.axis.automation.listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Registration Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.axis.automation.tests.registration.RegistrationTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Registration Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.axis.automation.tests.login.LoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Add To Cart Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.axis.automation.tests.cart.AddToCartTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add To Cart Tests --&gt;
+&lt;/suite&gt; &lt;!-- Axis Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Axis Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Registration Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add To Cart Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Axis Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Axis Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Axis_Automation_Suite');
+function tableData_Axis_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tc01_addDorianShoesToCart')
+data.setCell(0, 2, 'com.axis.automation.tests.cart.AddToCartTests')
+data.setCell(0, 3, 11731);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc01_validRegistrationWithValidCredentials')
+data.setCell(1, 2, 'com.axis.automation.tests.registration.RegistrationTests')
+data.setCell(1, 3, 3590);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc01_validLoginWithValidCredentials')
+data.setCell(2, 2, 'com.axis.automation.tests.login.LoginTests')
+data.setCell(2, 3, 3418);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc02_invalidLoginWithWrongPassword')
+data.setCell(3, 2, 'com.axis.automation.tests.login.LoginTests')
+data.setCell(3, 3, 1897);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc03_missingRequiredFieldsShowsAllErrors')
+data.setCell(4, 2, 'com.axis.automation.tests.registration.RegistrationTests')
+data.setCell(4, 3, 1348);
+window.suiteTableData['Axis_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Axis_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <div id="times-div-Axis_Automation_Suite">
+              </div> <!-- times-div-Axis_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Axis Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Axis_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.axis.automation.tests.registration.RegistrationTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegisterPage</span>
+                <span class="method-start">8994 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc01_validRegistrationWithValidCredentials</span>
+                <span class="method-start">11564 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc01_validRegistrationWithValidCredentials status=SUCCESS method=RegistrationTests....)</span>
+                <span class="method-start">15176 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">16572 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegisterPage</span>
+                <span class="method-start">20337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc03_missingRequiredFieldsShowsAllErrors</span>
+                <span class="method-start">22890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc03_missingRequiredFieldsShowsAllErrors status=SUCCESS method=RegistrationTests.tc...)</span>
+                <span class="method-start">24249 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.axis.automation.tests.login.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">24536 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">28451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc01_validLoginWithValidCredentials</span>
+                <span class="method-start">31590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc01_validLoginWithValidCredentials status=SUCCESS method=LoginTests.tc01_validLogi...)</span>
+                <span class="method-start">35011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">35276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToLoginPage</span>
+                <span class="method-start">39921 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc02_invalidLoginWithWrongPassword</span>
+                <span class="method-start">42244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc02_invalidLoginWithWrongPassword status=SUCCESS method=LoginTests.tc02_invalidLog...)</span>
+                <span class="method-start">44144 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.axis.automation.tests.cart.AddToCartTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">44390 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc01_addDorianShoesToCart</span>
+                <span class="method-start">48284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=tc01_addDorianShoesToCart status=SUCCESS method=AddToCartTests.tc01_addDorianShoesT...)</span>
+                <span class="method-start">60058 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

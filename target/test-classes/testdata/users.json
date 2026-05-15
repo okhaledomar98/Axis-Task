@@ -1,0 +1,41 @@
+{
+  "validUser": {
+    "firstName": "Omar",
+    "lastName": "Adriano",
+    "email": "axis.testuser1.reg2026@gmail.com",
+    "password": "Adriano@123",
+    "confirmPassword": "Adriano@123"
+  },
+
+  "invalidUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "not-valid-email",
+    "password": "123",
+    "confirmPassword": "456"
+  },
+
+  "missingFieldsUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "password": "",
+    "confirmPassword": ""
+  },
+
+  "existingUser": {
+    "firstName": "Omar",
+    "lastName": "Khaled",
+    "email": "o.khaledomar98@gmail.com",
+    "password": "1234567",
+    "confirmPassword": "1234567"
+  },
+
+  "invalidLoginUser": {
+    "firstName": "",
+    "lastName": "",
+    "email": "o.khaledomar98@gmail.com",
+    "password": "WrongPassword999!",
+    "confirmPassword": ""
+  }
+}
